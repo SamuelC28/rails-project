@@ -1,0 +1,46 @@
+
+# <h1>Hi, <%= @user.name %> </h1>
+
+# <!--<h3> login or signup</h3>
+
+# <!--<h1>Login</h1>
+# <form action='/sessions' method='POST'>
+#     <input type="hidden" name="authenticity_token" value=<%= form_authenticity_token %>>
+#     <input type="email" name="login[email]" placeholder="email">
+#     <input type="password" name="login[password]" placeholder="password">
+#     <input type="submit" name="submit" class="submit">
+# </form>-->
+
+# <!--h1>signup</h1>
+# <form action='/users' method='POST'>
+#     <input type="hidden" name="authenticity_token" value=<%= form_authenticity_token %>>
+#     <input type="name" name="user[email]" placeholder="Name">
+#     <input type="email" name="user[email]" placeholder="E-mail">
+#     <input type="password" name="login[password]" placeholder="Password">
+#     <input type="password_confirmation" name="login[password]" placeholder="Password confirmation">
+#     <input type="submit" name="submit" class="submit">
+# </form>-->
+
+# <h1>Signup</h1>-->
+
+# <% if flash.keys.include? 'alert' %>
+#   <%= flash[:alert] %><br>
+# <% end %>
+
+# <%= form_for @users do |f| %>
+#   <%= f.label :name %><br>
+#   <%= f.text_field :name %><br><br>
+
+#   <%= f.label :email %><br>
+#   <%= f.text_field :email%><br><br>
+
+#   <%= f.label :password %><br>
+#   <%= f.text_field :password %><br><br>
+
+#   <%= f.label :password_confirmation %><br>
+#   <%= f.text_field :password_confirmation %><br><br>
+
+#   <%= f.submit 'Signup'%>
+# <% end %>
+
+<!-- <%= flash.inspect %> -->
