@@ -1,11 +1,18 @@
-<h1>Sign in</h1>
+<body>
 
-<%= form_for :user, url: '/signin' do |f| %>
-  <%= f.label :name%><br>
-  <%= f.text_field :name %><br><br>
+<div class="register-page">
+    <div class="form">
+      <form class="login-form" method="POST" action="/signin">
+      <%= form_for :user, url: '/signin' do |f| %>
+          <%= f.text_field :name, placeholder: "Name"%> 
+          <%= f.password_field :password, placeholder: "Password"%>
+          <button>Sign In</button>
+          <p class="message"> Not Registered? <%= link_to "Register",new_user_path %></p>  
+      <% end %>
+      </form>
+    </div>
+</div>
+</body>
 
-  <%= f.label :password %><br>
-  <%= f.password_field :password %><br><br>
 
-  <%= f.submit "Sign In" %>
-<% end %>
+

@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
         session[:user_id] = @user.id
         redirect_to user_path(@user)
       else
-        flash[:error_signin] flash[:error_register] = user.errors.full_messages
+        flash[:error_signin] = user.errors.full_messages
         redirect_to signin_session_path
       end
     end
